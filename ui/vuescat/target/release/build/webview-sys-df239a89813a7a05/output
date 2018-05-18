@@ -1,0 +1,81 @@
+cargo:rustc-link-lib=framework=Cocoa
+cargo:rustc-link-lib=framework=WebKit
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("3")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+HOST = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+DEBUG = Some("false")
+TARGET = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+running: "cc" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "-m64" "-I" "webview" "-Wall" "-Wextra" "-x" "objective-c" "-std=c11" "-DDEBUG" "-DWEBVIEW_COCOA" "-o" "/Users/jwasserman/WebstormProjects/scat/ui/vuescat/target/release/build/webview-sys-df239a89813a7a05/out/webview.o" "-c" "webview.c"
+cargo:warning=In file included from webview.c:2:
+cargo:warning=webview/webview.h:1615:52: warning: unused parameter 'cmd' [-Wunused-parameter]
+cargo:warning=static void webview_window_will_close(id self, SEL cmd, id notification) {
+cargo:warning=                                                   ^
+cargo:warning=webview/webview.h:1615:60: warning: unused parameter 'notification' [-Wunused-parameter]
+cargo:warning=static void webview_window_will_close(id self, SEL cmd, id notification) {
+cargo:warning=                                                           ^
+cargo:warning=webview/webview.h:1621:61: warning: unused parameter 'self' [-Wunused-parameter]
+cargo:warning=static BOOL webview_is_selector_excluded_from_web_script(id self, SEL cmd,
+cargo:warning=                                                            ^
+cargo:warning=webview/webview.h:1621:71: warning: unused parameter 'cmd' [-Wunused-parameter]
+cargo:warning=static BOOL webview_is_selector_excluded_from_web_script(id self, SEL cmd,
+cargo:warning=                                                                      ^
+cargo:warning=webview/webview.h:1626:57: warning: unused parameter 'self' [-Wunused-parameter]
+cargo:warning=static NSString *webview_webscript_name_for_selector(id self, SEL cmd,
+cargo:warning=                                                        ^
+cargo:warning=webview/webview.h:1626:67: warning: unused parameter 'cmd' [-Wunused-parameter]
+cargo:warning=static NSString *webview_webscript_name_for_selector(id self, SEL cmd,
+cargo:warning=                                                                  ^
+cargo:warning=webview/webview.h:1631:58: warning: unused parameter 'cmd' [-Wunused-parameter]
+cargo:warning=static void webview_did_clear_window_object(id self, SEL cmd, id webview,
+cargo:warning=                                                         ^
+cargo:warning=webview/webview.h:1631:66: warning: unused parameter 'webview' [-Wunused-parameter]
+cargo:warning=static void webview_did_clear_window_object(id self, SEL cmd, id webview,
+cargo:warning=                                                                 ^
+cargo:warning=webview/webview.h:1632:59: warning: unused parameter 'frame' [-Wunused-parameter]
+cargo:warning=                                            id script, id frame) {
+cargo:warning=                                                          ^
+cargo:warning=webview/webview.h:1636:50: warning: unused parameter 'cmd' [-Wunused-parameter]
+cargo:warning=static void webview_external_invoke(id self, SEL cmd, id arg) {
+cargo:warning=                                                 ^
+cargo:warning=webview/webview.h:1885:47: warning: unused parameter 'w' [-Wunused-parameter]
+cargo:warning=WEBVIEW_API void webview_exit(struct webview *w) { [NSApp terminate:NSApp]; }
+cargo:warning=                                              ^
+cargo:warning=11 warnings generated.
+exit code: 0
+TARGET = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+HOST = Some("x86_64-apple-darwin")
+AR_x86_64-apple-darwin = None
+AR_x86_64_apple_darwin = None
+HOST_AR = None
+AR = None
+TARGET = Some("x86_64-apple-darwin")
+TARGET = Some("x86_64-apple-darwin")
+running: "ar" "crs" "/Users/jwasserman/WebstormProjects/scat/ui/vuescat/target/release/build/webview-sys-df239a89813a7a05/out/libwebview.a" "/Users/jwasserman/WebstormProjects/scat/ui/vuescat/target/release/build/webview-sys-df239a89813a7a05/out/webview.o"
+exit code: 0
+TARGET = Some("x86_64-apple-darwin")
+cargo:rustc-link-lib=static=webview
+cargo:rustc-link-search=native=/Users/jwasserman/WebstormProjects/scat/ui/vuescat/target/release/build/webview-sys-df239a89813a7a05/out
